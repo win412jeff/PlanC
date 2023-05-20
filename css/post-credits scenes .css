@@ -1,0 +1,340 @@
+@charset "UTF-8";  /*n 一定要加 */
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans&display=swap');
+/* ---------基本設定--------- */
+body{
+    font-family: Arial,'Open Sans', Helvetica,'Noto Sans TC','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei',sans-serif;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+body{
+    background-image: url(../images/慶生背景.jfif);
+    -webkit-font-smoothing: antialiased;   
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+/* ---------頁首區--------- */
+header{
+    z-index: 9999;
+    display: block;
+    position: relative;
+
+}
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;   
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 30px 70px;
+    background: linear-gradient(to top, rgba(23, 9, 7, 0) 0%, rgb(23, 9, 7) 100%);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.btn-1-2{
+    display: block;
+    text-align: center;
+}
+header .menu{
+    display: flex;
+    flex-basis: 40%;
+    margin: 1% 1% ;
+    margin-top: 10PX;   
+}
+header .menu li{
+    flex: 1;
+}
+header .menu a{
+    border-left: solid 2px #ffffff;
+    font-size: 1.3vw;
+    color: #ffffff;
+    text-decoration: none;
+} 
+header .menu li:first-child a{
+    border-left: none;
+} 
+header .menu a:hover{
+    background-color: rgb(211, 26, 26);
+    color: rgb(255, 255, 255);
+}
+header div{
+    height: 5%;
+    width: 5%;
+}
+/* ---------封面區--------- */
+#banner{
+    background-color: #332323;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* 設定成垂直排列 */
+    justify-content: center; /* 在垂直方向置中 */
+    align-items: center; /* 在水平方向置中 */
+    height: 100vh;
+    list-style-type: none;    
+    /* letter-spacing: 1px; */
+}
+.backgr{
+    position: absolute;
+    width: 100%;
+}
+.wang{
+    position: absolute;
+    opacity: 0.9;
+    width: 40%;
+    right: 0px;
+}
+.cyg{
+    position: relative; 
+    height: 100%;
+    width: 100%;   
+}
+.cyg img{
+    position: absolute;
+    top: 53.5%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    height: 93%;
+    width: 65%;  
+}
+.meme{
+    z-index: 100;
+    position: absolute;
+    top: 25%;
+    width: 80px;
+    width: 4.2%;
+}
+/* ---------影片區--------- */
+
+#video{
+    width: 100%;
+    height: 100vh;
+    /*background-image: url(../images/慶生影片背景.jfif);*/
+    display: flex;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+}
+.box1{
+    display: flex;
+    flex-direction: column; /* 設定成垂直排列 */
+    justify-content: center; /* 在垂直方向置中 */
+    align-items: center; /* 在水平方向置中 */   
+}
+#video h2{
+    color: #ffffff;   
+    font-size: 2vw;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000;
+}
+.post-credits{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 3%;
+}
+.post-credits div{
+    flex: 1;
+    text-align: right;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: 40%;
+}
+/*---*/
+#videoTHK{
+    width: 100%;
+    height: 20vh;
+    /*background-image: url(../images/慶生影片背景.jfif);*/
+    display: flex;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+}
+/* ---------贊助商--------- */
+#sponsor{
+    display: flex;
+    flex-direction: column; /* 設定成垂直排列 */
+    justify-content: center; /* 在垂直方向置中 */
+    align-items: center; /* 在水平方向置中 */ 
+    height: 50vh;
+}
+#sponsor h2{
+    display: flex;
+    flex-direction: column; /* 設定成垂直排列 */
+    justify-content: center; /* 在垂直方向置中 */
+    align-items: center; /* 在水平方向置中 */  
+    color: #ffffff;   
+    font-size: 2vw;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000;
+ 
+}
+.sponsorlist{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.sponsorlist li{
+    padding: 1%;
+}
+
+/* ---------工作人員--------- */
+.staff_letter{
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 80px;
+}
+#thk{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;      
+}
+.thk{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 80px;
+}
+.staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 26rem;
+    height: 20rem;
+    background: #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 9px rgb(22, 22, 22);
+    border-radius: 20px;
+}
+.staff div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.staff h2{
+    font-size: 2rem;
+    font-weight: 550;
+    margin-bottom: 1rem;
+}
+.staff p{
+    font-size: 1rem;
+}
+.staff img{
+    width: 35%;
+}
+/* ---------特別感謝--------- */
+#sp_thk{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.sp_thk {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:290px;
+    background: #ddd;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.sp_thk_member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    flex: 1 1 0;    
+}
+.sp_thk_member div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.sp_thk_member h2{
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-bottom: 1rem;
+}
+.sp_thk_member p{
+    font-size: 1rem;
+}
+.sp_thk_member a{
+    width: 35%;
+}
+/* ---------特別感謝--------- */
+.spstaff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 254px;
+    height: 157px;
+    background: rgb(196, 196, 202);
+    margin-bottom: 20px;
+}
+
+
+
+
+/* ---------footer--------- */
+.footmarquee{
+    position: fixed;
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+}
+.footmarquee p{
+    
+    color: #ff0000;
+}
+
+footer{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 在垂直方向置中 */
+    align-items: center; /* 在水平方向置中 */
+    text-align: center;
+    width: 100%;
+    height: 4vh;
+    background-color: #BBFBD0;;
+}
+footer p{
+    font-size: 2vh;
+}
+#gotop{
+    display: none;
+    width: 10rem;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 3rem;
+    right: 20px;
+    padding: 5px;
+    cursor: pointer;
+}

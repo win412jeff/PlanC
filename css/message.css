@@ -1,0 +1,205 @@
+@charset "UTF-8";  /*n 一定要加 */
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans&display=swap');
+/* ---------基本設定--------- */
+body{
+    font-family: Arial,'Open Sans', Helvetica,'Noto Sans TC','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei',sans-serif;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+body{
+    background-image: url(../images/慶生背景.jfif);
+    -webkit-font-smoothing: antialiased;   
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* ---------頁首區--------- */
+header{
+    z-index: 9999;
+    display: block;
+    position: relative;
+
+}
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;   
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 30px 70px;
+    background: linear-gradient(to top, rgba(23, 9, 7, 0) 0%, rgb(23, 9, 7) 100%);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.btn-1-2{
+    display: block;
+    text-align: center;
+}
+header .menu{
+    display: flex;
+    flex-basis: 40%;
+    margin: 1% 1% ;
+    margin-top: 10PX;   
+}
+header .menu li{
+    flex: 1;
+}
+header .menu a{
+    border-left: solid 2px #ffffff;
+    font-size: 1.3vw;
+    color: #ffffff;
+    text-decoration: none;
+} 
+header .menu li:first-child a{
+    border-left: none;
+} 
+header .menu a:hover{
+    background-color: rgb(211, 26, 26);
+    color: rgb(255, 255, 255);
+}
+header div{
+    height: 5%;
+    width: 5%;
+}
+/* ---------封面區--------- */
+#banner{
+    background-color: #332323;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* 設定成垂直排列 */
+    justify-content: center; /* 在垂直方向置中 */
+    align-items: center; /* 在水平方向置中 */
+    height: 100vh;
+    list-style-type: none;    
+    /* letter-spacing: 1px; */
+}
+.backgr{
+    position: absolute;
+    width: 100%;
+}
+.wang{
+    position: absolute;
+    opacity: 0.9;
+    width: 40%;
+    right: 0px;
+}
+.cyg{
+    position: relative; 
+    height: 100%;
+    width: 100%;   
+}
+.cyg img{
+    position: absolute;
+    top: 53.5%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    height: 93%;
+    width: 65%;  
+}
+.meme{
+    z-index: 100;
+    position: absolute;
+    top: 25%;
+    width: 80px;
+    width: 4.2%;
+}
+
+/* ---------留言板--------- */
+.mes_notes{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #ffffff;
+    text-shadow: 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000;
+}
+.mes_notes h2{
+    font-size: 3rem;
+}
+.mes_notes h3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+}
+.mes_notes p{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+}
+
+#standing_sign{    
+    display: block;
+    width: 90%;
+    margin: 0 auto;    
+}
+
+.travel_notes h2{   
+    margin-left: 16px;
+    color: #ffffff;
+}
+.travel_notes h3{   
+    margin-left: 16px;
+    color: #ffffff;
+}
+.travel_notes p{   
+    margin-left: 16px;
+    color: #ffffff;
+}
+
+
+.col-lg-2{
+    overflow:hidden;
+    padding: 3px;
+}
+.col-lg-2 img{
+    
+    transform:scale(1.0,1.0);
+    transition: all 0.3s ease-out;
+}
+.col-lg-2 img:hover{
+    transform:scale(1.1,1.1);
+}
+
+
+/* ---------footer--------- */
+
+footer{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 在垂直方向置中 */
+    align-items: center; /* 在水平方向置中 */
+    text-align: center;
+    width: 100%;
+    height: 4vh;
+    background-color: #BBFBD0;;
+}
+footer p{
+    font-size: 2vh;
+}

@@ -1,0 +1,317 @@
+@charset "UTF-8";  /*n 一定要加 */
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans&display=swap');
+/* ---------基本設定--------- */
+body{
+    font-family: Arial,'Open Sans', Helvetica,'Noto Sans TC','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei',sans-serif;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+body{
+    background-image: url(../images/慶生背景.jfif);
+    -webkit-font-smoothing: antialiased;   
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+/* ---------頁首區--------- */
+header{
+    z-index: 9999;
+    display: block;
+    position: relative;
+
+}
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;   
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 30px 70px;
+    background: linear-gradient(to top, rgba(23, 9, 7, 0) 0%, rgb(23, 9, 7) 100%);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.btn-1-2{
+    display: block;
+    text-align: center;
+}
+header .menu{
+    display: flex;
+    flex-basis: 40%;
+    margin: 1% 1% ;
+    margin-top: 10PX;   
+}
+header .menu li{
+    flex: 1;
+}
+header .menu a{
+    border-left: solid 2px #ffffff;
+    font-size: 1.3vw;
+    color: #ffffff;
+    text-decoration: none;
+} 
+header .menu li:first-child a{
+    border-left: none;
+} 
+header .menu a:hover{
+    background-color: rgb(211, 26, 26);
+    color: rgb(255, 255, 255);
+}
+header div{
+    height: 5%;
+    width: 5%;
+}
+/* ---------封面區--------- */
+#banner{
+    background-color: #332323;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* 設定成垂直排列 */
+    justify-content: center; /* 在垂直方向置中 */
+    align-items: center; /* 在水平方向置中 */
+    height: 100vh;
+    list-style-type: none;    
+    /* letter-spacing: 1px; */
+}
+.backgr{
+    position: absolute;
+    width: 100%;
+}
+.wang{
+    position: absolute;
+    opacity: 0.9;
+    width: 40%;
+    right: 0px;
+}
+.cyg{
+    position: relative; 
+    height: 100%;
+    width: 100%;   
+}
+.cyg img{
+    position: absolute;
+    top: 53.5%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    height: 93%;
+    width: 65%;  
+}
+.meme{
+    z-index: 100;
+    position: absolute;
+    top: 25%;
+    width: 80px;
+    width: 4.2%;
+}
+/* ---------影片區--------- */
+
+:root {
+    --primary: #e9c628;
+    --white: #ffffff;
+    --bg: #f5f5f5;
+  }
+
+  .container {
+    max-width: 124rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    color: white;
+    padding: 2rem 0;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000;
+  }
+  
+#tranding {
+    padding: 4rem 0;
+  }
+  
+  @media (max-width:1440px) {
+    #tranding {
+      padding: 3rem 0;
+    }
+  }
+  
+  #tranding .tranding-slider {
+    height: 36rem;
+    padding: 2rem 0;
+    position: relative;
+  }
+  
+  @media (max-width:500px) {
+    #tranding .tranding-slider {
+      height: 25rem;
+    }
+  }
+  
+  .tranding-slide {
+    width: 37rem;
+    height: 36rem;
+    position: relative;
+  }
+  
+  @media (max-width:500px) {
+    .tranding-slide {
+      width: 28rem !important;
+      height: 17rem !important;
+    }
+    .tranding-slide .tranding-slide-img img {
+      width: 28rem !important;
+      height: 17rem !important;
+    }
+  }
+ 
+  .tranding-slide .tranding-slide-img img {
+     /* 調整圖片大小 */
+    width: 37rem;
+    height: 27rem;
+    border-radius: 2rem;
+    object-fit: cover;
+  }
+  
+  .tranding-slide .tranding-slide-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  } 
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right {
+    display: none;
+  }
+  
+  .tranding-slider-control {
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tranding-slider-control .swiper-button-next {
+    left: 58% !important;
+    transform: translateX(-58%) !important;
+  }
+  
+  @media (max-width:990px) {
+    .tranding-slider-control .swiper-button-next {
+      left: 70% !important;
+      transform: translateX(-70%) !important;
+    }
+  }
+  
+  @media (max-width:450px) {
+    .tranding-slider-control .swiper-button-next {
+      left: 80% !important;
+      transform: translateX(-80%) !important;
+    }
+  }
+  
+  @media (max-width:990px) {
+    .tranding-slider-control .swiper-button-prev {
+      left: 30% !important;
+      transform: translateX(-30%) !important;
+    }
+  }
+  
+  @media (max-width:450px) {
+    .tranding-slider-control .swiper-button-prev {
+      left: 20% !important;
+      transform: translateX(-20%) !important;
+    }
+  }
+  
+  .tranding-slider-control .slider-arrow {
+    background: var(--white);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    left: 42%;
+    transform: translateX(-42%);
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  }
+  
+  .tranding-slider-control .slider-arrow ion-icon {
+    font-size: 2rem;
+    color: #222224;
+  }
+  
+  .tranding-slider-control .slider-arrow::after {
+    content: '';
+  }
+  /*調整點點位置*/
+  .tranding-slider-control .swiper-pagination {
+    position: relative;
+    width: 15rem;
+    bottom: 0rem;
+  }
+  
+  .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  }
+  
+  .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--primary);
+  }
+
+
+  
+/* ---------footer--------- */
+
+footer{
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 在垂直方向置中 */
+  align-items: center; /* 在水平方向置中 */
+  text-align: center;
+  width: 100%;
+  height: 4vh;
+  background-color: #BBFBD0;;
+}
+footer p{
+  font-size: 2vh;
+}
+#gotop{
+  display: none;
+  width: 10rem;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 3rem;
+  right: 20px;
+  padding: 5px;
+  cursor: pointer;
+}

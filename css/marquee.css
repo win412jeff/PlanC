@@ -1,0 +1,44 @@
+#fanmessage {
+  display: flex;
+}
+
+#fanmessage ul {
+  list-style: none;
+}
+
+#fanmessage h3 {
+  flex: 0 0 50%;
+}
+
+#fanmessage .up, #fanmessage .down {
+  flex: 1;
+}
+
+#fanmessage .up ul {
+  animation: marquee-up 45s linear infinite;
+}
+
+#fanmessage .down ul {
+  animation: marquee-down 45s linear infinite;
+}
+
+
+
+
+@keyframes marquee-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes marquee-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

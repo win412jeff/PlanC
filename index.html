@@ -1,0 +1,492 @@
+
+<!-- 
+參考資料
+https://youtu.be/mnjCjAWvy1I 開幕
+Copyright (c) 2023 by Steven Lei (https://codepen.io/stevenlei/pen/LYpZjRK)  介紹熙歌遮罩片
+https://youtu.be/Lv9nt2X9_yo 介紹熙歌滾動式圖片
+https://youtu.be/li-ylRo7VEc 影片響應式滑塊  
+ 參考網站
+https://www.nakirifanactivity.com/ 
+https://nesuirys.com/suisei/ 
+https://twhanjitai.wixsite.com/kanaeichu1/%E5%9F%BA%E6%9C%AC%E8%B3%87%E6%96%99%E4%BB%8B%E7%B4%B9 -->
+
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <title>熙歌工作室慶生網頁</title>
+    <!-- ---------icon必須放最上面---------  -->
+    <link rel="icon" href="./images/icon.png">
+    <!-- ---------消除預設值---------  -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- jquery ui 的css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- lightbox css -->
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <!-- 物件抖動 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.7.0/csshake.min.css">
+    <!-- 自訂的css一定要放在最下面  -->
+    <link rel="stylesheet" href="./css/stylev2.css">
+    <!-- 跑馬燈  -->
+    <link rel="stylesheet" href="./css/marquee.css">
+</head>
+
+<body>
+    <!--===== 開場動畫 =====-->
+    <div class="overlay">
+
+    </div>  
+    <!-----------頁首區----------->
+    <header>
+        <nav id="home">
+            <div><a href="./index.html"><img src="./images/icon.png" alt="cygnus"></a></div>
+            <!-- 主按鈕區 -->
+            <ul class="menu">
+                <li><a class="btn-1-2" href="./index.html">Home</a></li>
+                <li><a class="btn-1-2" href="./Message.html">Message</a></li>
+                <li><a class="btn-1-2" href="./Film.html">Film</a></li>
+                <li><a class="btn-1-2" href="./studio activities.html">工作室活動</a></li>
+                <li><a class="btn-1-2" href="./post-credits scenes .html">幕後花絮</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="banner">
+            <div class="backgr"><img src="./images/熙歌網頁背景.png" alt=""></div>
+            <div class="wang"><img src="./images/王熙歌字.png" alt=""></div>
+            <div class="cyg"><img  src="./images/熙歌網頁封面圖V3.png" alt=""></div>
+            <div class="meme "><img  src="./images/迷因家王熙歌.png" alt=""></div>            
+        </section>
+        <!-- 慶生影片區 -->
+        <section id="video">            
+            <div class="box1">
+                <h2>婚叫們送給熙歌的生日影片</h2>
+                圖片連結至YT<a data-fancybox="gallery" href="https://youtu.be/z8ah2-kiEE0 "><img width="980" height="550" src="http://img.youtube.com/vi/z8ah2-kiEE0/maxresdefault.jpg" alt="Tranding"></a>
+        </section>
+
+        <!-- 立牌跑 -->
+        <section id="standing_sign">
+            <div class="travel_notes">
+                <h2>婚叫 團結 強大 - 熙遊記</h2>
+                <img src="./images/熙遊記V2.png" alt="">
+                <p>
+                    在這個特殊的日子，遍佈台灣各地的婚叫們以熙歌的立牌為媒介，在全台知名景點以接力的方式，留下了熙歌的身影。
+                    <br><br>透過這個活動，將熙歌的魅力和熱情，在台灣各個角落傳遞，讓更多人認識熙歌，喜歡熙歌。
+                </p>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- col總共12格，col-6手機一排2張，sm(平板)以上size一排只顯示3張圖12/4=3，lg(桌機)以上一排顯示4張圖12/3=4 -->
+                    <!-- .col-sm-4.col-lg-3*23>(a>img[src="./images/pt_$.jpg"])+h2{產品$}+h3{NT.999} -->
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_01.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_01.png" loading="lazy" alt="" />
+                        </a>
+
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_02.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_02.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_03.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_03.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_04.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_04.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_05.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_05.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_06.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_06.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_07.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_07.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_08.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_08.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_09.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_09.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_10.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_10.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_11.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_11.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_12.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_12.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_13.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_13.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_14.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_14.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_15.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_15.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_16.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_16.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_17.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_17.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_18.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_18.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_19.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_19.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_20.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_20.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_21.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_21.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_22.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_22.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_23.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_23.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_24.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_24.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_25.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_25.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_26.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_23.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_27.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_27.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_28.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_28.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <a class="example-image-link"
+                            href="./images/AcrylicStandRun/StandRun_29.png"
+                            data-lightbox="example-set">
+                            <img class="example-image"src="./images/AcrylicStandRun/StandRun_29.png" loading="lazy" alt="" />
+                        </a>
+                    </div>
+                  </div>                
+              </div>
+        </section>
+
+        <!-- 慶生留言區 -->              
+        <section id="fanmessage">
+            <h3>婚叫們想對熙歌說的話</h3>
+            <div class="up"></div>
+            <div class="down"></div>
+        </section>
+        <!-- 新觀眾 -->
+        <section id="newfan">
+            <div id="chick" class="shake shake-rotate"><img src="./images/心雞拉奈.png" alt=""></div>
+            <div class="newfandialogbox"><img src="./images/什麼你竟然是新觀眾-對話框.png" alt=""></div>
+            <div class="whatword"><h4>什麼!!!!!</h4></div>
+            <div class="newfanword"><h4>你竟然是新觀眾!!!</h4></div>
+        </section>
+        <!-- 晶片放大 -->
+        <section id="chip-sectionfather">
+            <div id="chip-section">
+                <iframe width="1920" height="960" src="https://www.youtube.com/embed/l3Gkmro5piU?autoplay=1&mute=1&loop=1&playlist=l3Gkmro5piU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h1>
+                帶你見識<br>
+                熙歌的魅力
+                </h1>
+                <div id="the-chip">
+                  <svg id="A13" data-name="圖層 9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1107.18 1090.52">
+                    <rect class="text-bg" x="85.61" y="334.79" width="919.31" height="422.03"/>
+                    <g class="chip-mask">
+                      <path d="m187.71,534.71c-72.49,27.75-90.1,56.71-8.26,28.78,6.38-6.77,10.08-14.97,10.13-23.03,5.56,5.87,13.89,9.33,23.2,9.89,79.29-35.56,47.4-45.15-25.07-15.64Z"/>
+                      <path d="m597.49,530.45c-25.06-1.65-28.49,47.34-.05,46.68,8.01,0,14.39-4.5,16.43-10.65,1.54-4.39.67-14.79.89-19.48.05-9.37-6.85-16.59-17.27-16.55Z"/>
+                      <path d="m206.59,581.47c-14.52-14.51-30.77-10.01-48.26-3.16,28.69,35.11,83.68,13.36,80.63-31.85-17.18,6.64-31.83,15.2-32.37,35.01Z"/>
+                      <path d="m976.75,34.52H114.15c-44.08,0-80.15,36.07-80.15,80.15v862.61c0,44.08,36.07,80.15,80.15,80.15h862.61c44.08,0,80.15-36.07,80.15-80.15V114.67c0-44.08-36.07-80.15-80.15-80.15ZM252.82,539.61c7.21,59.43-73.98,91.47-109.31,43.18-70.36,20.77-77.88,2.57-12.29-30.43-8.17-60.3,74.56-92.95,109.79-43.37,70.46-20.74,77.36-2.29,11.81,30.62Zm147.43,59.49c-123.09-5.14-75.78-152.85,36.7-115.31l-6.32,20.89c-90.8-30.83-94.88,97.4.05,68.66l4.62,20.72c-5.55,2.34-18.54,5.04-35.05,5.04Zm117.95-30.82c-20.75,46.54-29.94,60.95-64.87,67.24l-6.63-22.24c9.79-1.74,24.61-8.16,27.96-18.87,0-.99-.27-2.26-1.37-4.36l-36.48-77.63h34.27c3.97,11.32,16.94,46.58,19.84,57.47h.65c2.88-10.71,13.35-46.21,16.69-57.47h33.03l-23.08,55.85Zm127.51-30.56c-1.9,23.63,7.53,70.38-15.14,85.38-19.51,14.11-55.62,12.67-76.16,3.92l6.15-20c18.93,9.37,58.9,12.58,54.67-21.44h-.41c-22.94,24.83-71.74,5.02-68.97-30.36-2.79-38.56,50.59-59.77,72.39-32.65h.41l1.04-10.15h26.88c-.47,5.48-.85,12.65-.85,25.29Zm118.92,59.57h-31v-47.03c0-10.93-4.58-18.42-15.75-18.42-11.28.54-16.72,7.43-16.78,16.49,0,0,0,48.96,0,48.96h-31c-.13-18.18.49-68.24-.81-84.86h26.85l1.43,11.76h.65c4.02-5.47,14.15-13.67,30.77-13.67,46.62-1.93,34.2,56.03,35.64,86.77Zm92.43,0l-1.42-11.98h-.65c-3.89,5.24-13.17,13.88-31.03,13.88-45.96,2.48-33.47-56.33-34.98-86.77h31v45.6c0,12.42,4.68,19.85,15.59,19.85,10.87-.61,16.12-6.61,16.52-14.88,0,0,0-50.57,0-50.57h31c.14,17.83-.5,68.89.81,84.86h-26.85Zm77.37,1.82c-12.98,0-24.65-2.5-32.24-5.97l5.61-18.84c6.75,3.9,38.3,12.55,39.88-.7,0-4.39-3.17-6.52-14.61-9.81-46.97-11.9-31.02-53.99,12.11-53.27,11.65,0,21.96,2.33,28.04,4.95l-5.39,18.17c-5.32-2.92-32.41-10.12-33.46,2.05,0,4.06,3.95,6.21,16.15,9.8,44.34,11.74,31.31,55.65-16.09,53.63Z"/>
+                    </g>
+                    <path d="m975.23,0c63.04,0,114.26,50.59,115.27,113.38l.02,1.91v859.94c0,63.04-50.59,114.26-113.38,115.27l-1.91.02H115.29c-63.04,0-114.26-50.59-115.27-113.38l-.02-1.91V115.29C0,52.25,50.59,1.03,113.38.02l1.91-.02h859.94Zm-1.4,33.81H114.51c-44.12,0-79.98,35.41-80.69,79.37v1.33s-.01,859.33-.01,859.33c0,44.12,35.41,79.98,79.37,80.69h1.33s859.33.01,859.33.01c44.12,0,79.98-35.41,80.69-79.37v-1.33s.01-859.33.01-859.33c0-44.12-35.41-79.98-79.37-80.69h-1.33Z" class="chip"></path>
+                  </svg>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- 介紹熙歌 -->
+        <section id="cygintroduction">
+            <div class="cygintroduction"><img src="./images/介紹熙歌V2.png" alt=""></div>
+            <div class="weektable">
+                <div class="weektablebackground"> 
+                    <ul>
+                        <li><span class="title">名字</span><span class="word">  熙歌</span></li>
+                        <li><span class="title">綽號</span><span class="word">  歌～～ E歌 西瓜 阿公的夢中情人</span></li>
+                        <li><span class="title">精神體年齡</span><span class="word">  20</span></li>
+                        <li><span class="title">生日</span><span class="word">  5/20</span></li>
+                        <li><span class="title">語言</span><span class="word">  中文Ｏ 日文▲ English(Ｏ+▲)÷2</span></li>
+                        <li><span class="title">喜歡</span><span class="word">  彈琴 打遊戲 吃大餐 睡覺 庫洛米</span></li>
+                        <li><span class="title">喜歡的食物</span><span class="word">  肉 番茄醬＋水餃</span></li>
+                        <li><span class="title">喜歡的動畫</span><span class="word">  鋼之煉金術師 86</span></li>
+                        <li><span class="title">喜歡的東西</span><span class="word">  錢 婚叫</span></li>
+                        <li><span class="title">討厭</span><span class="word">  美樂蒂</span></li>
+                        <li><span class="title">特技</span><span class="word">  5速嘴 釣魚(被釣、自釣) 抬棺 結紮 人見人愛;花見花開 輕聲熙語 開船</span></li>
+                        <li><span class="title">出道日</span><span class="word">  2022/11/28</span></li>
+                        <li><span class="word">#迷因擔當  #極深空 台語擔當  <del>#氣質擔當</del></span></li>
+                        <li><span class="space"></span><span></span></li>
+                        <li><span class="title">繪師媽媽</span><span class="word"> RainFox <a href="https://twitter.com/AF_Rainfox" target="_blank">＠AF_RainFox</a></span></li>
+                        <li><span class="title">建模媽媽</span><span class="word"> 茂矢門 <a href="https://twitter.com/mon_moya" target="_blank">＠Mon_moya</a></span></li>
+                        <li><span class="title">字體設計</span><span class="word"> サヤカ <a href="https://twitter.com/laipeng16" target="_blank">＠laipeng16</a></span></li>
+                    </ul>  
+                </div>
+
+            </div>
+        </section>
+            
+        <!-- 滾動 -->
+        <section id="scrollfather">
+            <div id="scroll">
+                <div class="bg"></div>
+                <div class="info">
+                    <div class="half">
+                        <p>Hi there , I’m </p>
+                        <h1>Cygnus ch. 熙歌 <p>(公主殿下)</p></h1>
+                        <h5>誕生於遙遠銀河彼端的天鵝座⚫ 無聲卻深沉的黑洞。<br>想用音樂，將內心深處的情感（ㄏㄨㄣˋ ㄌㄨㄢˋ）傳遞給地球上所有人✨
+                        </h5>
+                    </div>
+                </div>
+            
+                <div class="info">
+                    <div class="half right">
+                        <p>Some info</p>
+                        <h2>About Cygnus</h2>
+                        <p>是個愛打電動、彈琴唱歌、做迷因的渾沌黑洞； 話說，黑洞可以吞噬一切，想不想體驗看看呀♫ </p>
+                        <h3>清新健全早8台主</h3>
+                        <p>當你還未清醒時，打開熙歌早八台；當你通勤上班時，打開熙歌早八台；當你開會或老師在檢討考卷時，打開熙歌早八台。
+                            讓清新的一天，由熙歌早八台為你帶來更好的開始。</p>
+                        <h3>Favourite quote</h3>
+                        <blockquote>你去吃大便啦! 、 吼呦~~~~~~</blockquote>
+                    </div>
+                </div>            
+                <div class="info">
+                    <div class="half left">
+                        <h6>(」・ω・)」熙歌！(／・ω・)／超可愛！</h6>
+                        <p class="letter">熙歌不僅擁有獨特的魅力，還非常用心地回覆每位婚叫在Twitter上的留言，並轉發婚叫們的作品。熙歌在直播中互動超好，並且用心準備有趣的內容，給觀眾滿滿的福利，還有笑聲非常討喜。
+                            <br><br>熙歌是一位非常用心且充滿熱情的主播，對待婚叫的態度和互動方式都非常讓人感動，熙歌值得被更多人喜愛和支持。(熙歌就是婆啦!)
+                             </p>
+                        <div class="weektable2">
+                            <div class="introductionicon">
+                                <nav>
+                                    <ul>
+                                        <li><a href="https://twitter.com/CygnusXDFP" target="_blank" title="twitter"><img src="./images/twitter icaon.png" alt="twitter"></a></li>
+                                        <li><a href="https://www.youtube.com/@CygnusXDFP" target="_blank" title="youtube"><img src="./images/youtube icon.png" alt="youtube"></a></li>
+                                        <li><a href="./Film.html"  title="精華影片"><img src="./images/影片icon.png" alt="精華影片"></a></li>
+                                        <li style="flex-basis: 80%;"><p><-這裡可以看到更多熙歌喔~</p></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 邀請新婚叫 -->
+        <section id="welcome">
+            <div class="cygpoint"><img src="./images/cygpoint.png" alt=""></div>
+            <div class="welcomeblock">
+                <div class="welcome_letter"> 
+                    <ul>
+                        <li><h1>【熙歌工作室】</h1></li>
+                        <li><span class="space"></span><span></span></li>
+                        <li><h5>歡迎來到熙歌非官方粉絲群【熙歌工作室】！</h5></li>
+                        <li><span class="space"></span><span></span></li>
+                        <li><h5>這裡是一個結識志同道合的熙歌粉絲的地方，可以一起觀看熙歌的直播、為熙歌應援，還可以一起瘋狂地購買熙歌的周邊商品！</h5></li>
+                        <li><span class="space"></span><span></span></li>
+                        <li><h5>工作室還會時不時舉辦歌唱大會、跳熙歌太郎與其他群的聯動活動和工作室台詞回等，期待未來的活動中能夠見到你！</h5></li>
+                        <li><span class="space"></span><span></span></li>
+                        <li><h5>無論你是新加入的婚叫還是資深的婚叫，無論你是社恐還是外向的人，無論你來自哪個國家，我們都歡迎你的加入。加入熙歌工作室，讓我們一起成為守護熙歌公主殿下的騎士！</h5></li>
+                        <li><span class="space"></span><span></span></li>
+                        <li><h5>婚叫 團結 強大!</h5></li>
+                    </ul>  
+                </div>
+                <div class="welcomedc">
+                    <nav>
+                        <ul>
+                            <li><a href="https://discord.gg/49ESKCCUfh" target="_blank" title="熙歌工作室"><img src="./images/dc icon.png" alt=""></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+          
+
+    </main>
+    <div class="footmarquee">
+        <marquee behavior="scroll" direction="left"  scrollamount="5">
+            <p>(」・ω・)」熙歌！(／・ω・)／是公主！(」・ω・)」熙歌！(／・ω・)／最可愛！  (」・ω・)」熙歌！(／・ω・)／是公主！(」・ω・)」熙歌！(／・ω・)／最可愛！   (」・ω・)」熙歌！(／・ω・)／是公主！(」・ω・)」熙歌！(／・ω・)／最可愛！ (」・ω・)」熙歌！(／・ω・)／是公主！(」・ω・)」熙歌！(／・ω・)／最可愛！</p>     
+        </marquee>
+    </div>
+    <footer>
+        <p>Copyright © 2023 熙歌慶生網頁｜by froggy</p>
+    </footer>
+
+    <!-- 置頂按鈕 -->
+    <div id="gotop">
+        <img src="./images/gotop.png" alt="置頂按鈕">
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>  
+    <!-- jquery 原生碼 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- jquery ui -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!-- lightbox -->
+    <script src="./script/lightbox.js"></script>
+
+    <!--===== TweenMax CDN =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- 自訂 jquery  必須最後執行-->
+    <script src="./script/myscript.js"></script>
+    <!-- 跑馬燈-->
+    <script src="./script/marquee.js"></script>
+
+ 
+    
+
+</body>
+
+</html>
